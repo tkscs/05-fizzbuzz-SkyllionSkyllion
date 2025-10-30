@@ -1,22 +1,15 @@
+a = 3
+b = 5
+fizz = "ido is dumb"
+buzz = "ido is stupid"
+fizzbuzz = "ido is a stinky"
 
-today = "Monday"
-# schoolday = today in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-schoolday = (
-    (today == "Monday") or
-    (today == "Tuesday") or
-    (today == "Wednesday") or
-    (today == "Thursday") or
-    (today == "Friday")
-)
-
-if schoolday:
-    if today == "Friday":
-        print("We have Kab Shab today.")
-    elif today == "Monday":
-        print("We have Assembly today.")
-    elif today == "Wednesday":
-        print("We have Heart Work today.")
+for i in range (1000000):
+    if i % b == 0 and i % a != 0:
+        print (fizz)
+    elif i % a ==0 and i % b != 0:
+        print (buzz)
+    elif i % a ==0 and i % b == 0:
+        print (fizzbuzz)
     else:
-        print("We have a short break today.")
-else:
-    print("Weekend!!")
+        print (i)
